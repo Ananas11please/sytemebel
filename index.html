@@ -12,6 +12,12 @@
 <body class="page">
   <header class="header">
     <a href="#" class="header__logo">Скай</a>
+    <input type="checkbox" id="nav-toggle" class="header__nav-toggle visually-hidden">
+    <label for="nav-toggle" class="header__burger" aria-label="Меню">
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+    </label>
     <span class="header__divider" aria-hidden="true"></span>
     <nav class="header__nav nav">
       <ul class="nav__list">
@@ -352,8 +358,8 @@
         </div>
       </div>
       <nav class="footer__nav footer-nav">
-        <div class="footer-nav__column">
-          <h3 class="footer-nav__title">Магазин</h3>
+        <details class="footer-nav__column" open>
+          <summary class="footer-nav__title">Магазин<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
           <ul class="footer-nav__list">
             <li><a href="#" class="footer-nav__link">Каталог</a></li>
             <li><a href="#" class="footer-nav__link">Оплата и доставка</a></li>
@@ -361,33 +367,33 @@
             <li><a href="#" class="footer-nav__link">Вопросы и ответы</a></li>
             <li><a href="#" class="footer-nav__link">Отзывы</a></li>
           </ul>
-        </div>
-        <div class="footer-nav__column">
-          <h3 class="footer-nav__title">О нас</h3>
+        </details>
+        <details class="footer-nav__column" open>
+          <summary class="footer-nav__title">О нас<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
           <ul class="footer-nav__list">
             <li><a href="#" class="footer-nav__link">О бренде</a></li>
             <li><a href="#" class="footer-nav__link">Клуб Moonk</a></li>
             <li><a href="#" class="footer-nav__link">Блог</a></li>
             <li><a href="#" class="footer-nav__link">Контакты</a></li>
           </ul>
-        </div>
-        <div class="footer-nav__column">
-          <h3 class="footer-nav__title">Журналы и модели</h3>
+        </details>
+        <details class="footer-nav__column" open>
+          <summary class="footer-nav__title">Журналы и модели<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
           <ul class="footer-nav__list">
             <li><a href="#" class="footer-nav__link">3D-модели для дизайнеров</a></li>
             <li><a href="#" class="footer-nav__link">Журнал каталог мебели</a></li>
             <li><a href="#" class="footer-nav__link">Каталог дизайн-проектов</a></li>
             <li><a href="#" class="footer-nav__link">Индивидуальные изделия</a></li>
           </ul>
-        </div>
+        </details>
         <div class="footer-nav__aside">
-          <div class="footer-nav__column">
-            <h3 class="footer-nav__title">Дизайн-проекты</h3>
+          <details class="footer-nav__column" open>
+            <summary class="footer-nav__title">Дизайн-проекты<img src="images/chevron-down.svg" alt="" class="footer-nav__chevron" width="13" height="13"></summary>
             <ul class="footer-nav__list">
               <li><a href="#" class="footer-nav__link">Дизайн детской комнаты</a></li>
               <li><a href="#" class="footer-nav__link">Общественные пространства</a></li>
             </ul>
-          </div>
+          </details>
           <div class="footer-nav__column footer-nav__column--social">
             <h3 class="footer-nav__title">Мы в социальных сетях</h3>
             <img src="images/footer-social.svg" alt="Социальные сети" class="footer-nav__social-icons" width="240" height="45">
@@ -413,5 +419,32 @@
       </ul>
     </div>
   </footer>
+
+  <nav class="tabbar" aria-label="Навигация">
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span class="tabbar__label">Главная</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <span class="tabbar__label">Поиск</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></svg>
+      <span class="tabbar__label">Каталог</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 11a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>
+      <span class="tabbar__label">Корзина</span>
+    </a>
+    <a href="#" class="tabbar__item">
+      <svg class="tabbar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span class="tabbar__label">Еще</span>
+    </a>
+  </nav>
+
+  <button type="button" class="chat-fab" aria-label="Чат">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 3z"/></svg>
+  </button>
 </body>
 </html>
