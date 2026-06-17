@@ -236,35 +236,89 @@
     <section class="faq">
       <h2 class="faq__title">Вопрос-ответ</h2>
       <ul class="faq__list">
-        <li class="faq__item accordion">
-          <button class="accordion__header" type="button">
-            <span class="accordion__question">Как сделать заказ?</span>
-            <img src="images/accordion-plus.svg" alt="" class="accordion__icon" width="50" height="50">
-          </button>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Как сделать заказ?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Вы можете сделать заказ любым удобным способом:</p>
+              <ul class="accordion__bullets accordion__bullets--dot">
+                <li>через сайт <a href="https://moonk-design.com" class="accordion__link" target="_blank" rel="noopener">www.moonk-design.com</a></li>
+                <li>по телефону <a href="tel:+74993919028" class="accordion__link">+74993919028</a></li>
+                <li>через Telegram</li>
+              </ul>
+            </div>
+          </details>
         </li>
-        <li class="faq__item accordion">
-          <button class="accordion__header" type="button">
-            <span class="accordion__question">Как собрать мебель?</span>
-            <img src="images/accordion-plus.svg" alt="" class="accordion__icon" width="50" height="50">
-          </button>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Как собрать мебель?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Всю нашу мебель можно собрать самостоятельно с помощью инструкции.<br>Найти инструкцию можно:</p>
+              <ul class="accordion__bullets">
+                <li>На коробе, в который упакован каждый наш предмет — на небольшой наклейке с QR-кодом, наведя на который на вашем телефоне откроется инструкция по сборке этого предмета.</li>
+                <li>В карточке товара на нашем сайте в разделе <a href="https://moonk-design.com/magazin/furniture/" class="accordion__link" target="_blank" rel="noopener">Каталог</a>. При доставке по Москве и ближайшему Подмосковью вы также можете заказать услугу профессиональной сборки всех приобретенных предметов.</li>
+              </ul>
+            </div>
+          </details>
         </li>
-        <li class="faq__item accordion">
-          <button class="accordion__header" type="button">
-            <span class="accordion__question">Есть ли у вас сборщик в регионах?</span>
-            <img src="images/accordion-plus.svg" alt="" class="accordion__icon" width="50" height="50">
-          </button>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Есть ли у вас сборщик в регионах?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">К сожалению, сборщик мебели есть только в Москве и ближайшем Подмосковье.</p>
+              <p class="accordion__text">Всю нашу мебель можно собрать самостоятельно с помощью инструкции. Если у вас нет такой возможности, мы рекомендуем воспользоваться сервисами Профи.ру, где можно быстро найти мастера по вашему бюджету. Мастеру необходимо направить инструкцию по сборке предмета, чтобы он взял с собой необходимые инструменты.</p>
+            </div>
+          </details>
         </li>
-        <li class="faq__item accordion">
-          <button class="accordion__header" type="button">
-            <span class="accordion__question">Как осуществляется оплата?</span>
-            <img src="images/accordion-plus.svg" alt="" class="accordion__icon" width="50" height="50">
-          </button>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Как осуществляется оплата?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Мы работаем по 100% предоплате. При заказе на сумму от 150 000 рублей мы можем разделить оплату на 2 части: 50% при оформлении заказа и 50% перед получением заказа.</p>
+              <p class="accordion__text">После оформления заказа мы вышлем вам на почту ссылку на оплату. Ссылка поступит от Сбербанка, оплату можно будет произвести любой банковской картой. После оплаты на указанный вами email придет электронный чек с указанием приобретенных вами товаров, номером заказа, а также нашими реквизитами.</p>
+            </div>
+          </details>
         </li>
-        <li class="faq__item accordion">
-          <button class="accordion__header" type="button">
-            <span class="accordion__question">Из каких материалов изготовлена мебель?</span>
-            <img src="images/accordion-plus.svg" alt="" class="accordion__icon" width="50" height="50">
-          </button>
+        <li class="faq__item">
+          <details class="accordion" name="faq">
+            <summary class="accordion__header">
+              <span class="accordion__question">Из каких материалов изготовлена мебель?</span>
+              <span class="accordion__icon" aria-hidden="true">
+                <img src="images/accordion-plus.svg" alt="" class="accordion__icon-img accordion__icon-img--add" width="50" height="50">
+                <img src="images/accordion-minus.svg" alt="" class="accordion__icon-img accordion__icon-img--remove" width="50" height="50">
+              </span>
+            </summary>
+            <div class="accordion__answer">
+              <p class="accordion__text">Все наши предметы произведены из березовой фанеры и покрыты шпоном дуба, либо шпоном американского ореха. Для небольших деталей, не несущих конструктивную нагрузку, мы используем МДФ.</p>
+              <p class="accordion__text">Фанера — это многослойный материал, который представляет собой склеенные между собой листы шпона (тонкие листы древесины толщиной от 0,1 до 10 мм). Листы шпона клеются перпендикулярно, благодаря чему фанера обладает высокой прочностью.</p>
+              <p class="accordion__text">Детали, покрытые шпоном, мы покрываем прозрачным лаком, а цветные детали — эмалями.</p>
+              <p class="accordion__text">Мы используем лакокрасочные материалы итальянского бренда Sayerlack, лидера на рынке европейских лакокрасочных материалов.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
