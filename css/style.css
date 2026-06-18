@@ -298,17 +298,6 @@ button {
   pointer-events: none;
 }
 
-.hero__product {
-  position: absolute;
-  right: 85px;
-  top: 63px;
-  width: 1019px;
-  height: auto;
-  max-height: 681px;
-  object-fit: contain;
-  pointer-events: none;
-}
-
 .hero__title {
   position: absolute;
   left: 117px;
@@ -1142,7 +1131,6 @@ summary.footer-nav__title::-webkit-details-marker {
     height: 640px;
   }
 
-  .hero__product,
   .hero__arrow,
   .hero__dots {
     display: none;
