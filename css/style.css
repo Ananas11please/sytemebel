@@ -1207,14 +1207,18 @@ summary.footer-nav__title::-webkit-details-marker {
 
   .product-card {
     width: 100%;
-    height: auto;
+    height: 330px;
     padding: 30px;
     gap: 24px;
+    justify-content: space-between;
   }
 
   .product-card__image {
+    flex: 1;
+    min-height: 0;
     height: auto;
-    max-height: 320px;
+    max-height: none;
+    width: 100%;
   }
 
   .product-card__info {
